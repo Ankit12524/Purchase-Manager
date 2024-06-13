@@ -31,7 +31,7 @@ class _AppBaseState extends State<AppBase> {
         showSelectedLabels: true,
         showUnselectedLabels: false,
         currentIndex: currentindex,
-        backgroundColor: Colors.green,
+        //backgroundColor: Colors.green,
         onTap: (index) => setState(() => currentindex = index),
         type : BottomNavigationBarType.fixed,
         items: [

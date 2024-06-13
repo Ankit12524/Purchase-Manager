@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class Loading_Screen extends StatefulWidget {
   const Loading_Screen({super.key});
@@ -12,7 +13,7 @@ class _Loading_ScreenState extends State<Loading_Screen> {
   switch_screen () async {
 
     //TODO: replace future delay with any funtion you wish to perform before loading the app
-    await Future.delayed(Duration(seconds: 2),() {
+    await Future.delayed(Duration(seconds: 1),() {
       setState(() {
         Navigator.pushReplacementNamed(context, '/app_base');
       });;
@@ -32,7 +33,6 @@ class _Loading_ScreenState extends State<Loading_Screen> {
       //title: Text('Loading Screen'),
 
       body: Center(
-        //TODO: import Spinkitwave spinner lib
         child: SpinKitWaveSpinner(  //package name : Spinkit
             color: Theme.of(context).colorScheme.primary
         ),

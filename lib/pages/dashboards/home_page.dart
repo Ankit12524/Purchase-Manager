@@ -13,6 +13,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(title: Text('Home'),),
       body: Center(child: Text('Home'),),
+      floatingActionButton: FloatingActionButton(onPressed: () {setState(() {
+        Navigator.pushNamed(context, '/add_purchases');
+      });},
+      child: Icon(Icons.add),),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:purchase_manager/pages/dashboards/add_purchases.dart';
 import 'package:purchase_manager/pages/loading.dart';
 import 'package:purchase_manager/pages/bottom_app_bar.dart';
 import 'package:purchase_manager/pages/login/login.dart';
@@ -52,11 +53,12 @@ class MyApp extends StatelessWidget {
 
 
     routes: {
-    '/' : (context) => Loading_Screen(),
+    '/' : (context) => Loading_Screen(), //TODO : Change back to Loading()
     '/app_base': (context) => AppBase(),
     '/login': (context) => LogIn(),
     '/signup': (context) => SignUp(),
-    '/settings' : (context) => SettingsPage()
+    '/settings' : (context) => SettingsPage(),
+    '/add_purchases' : (context) => AddPurchases(),
       }
     );
   }
